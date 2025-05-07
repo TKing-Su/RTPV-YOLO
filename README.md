@@ -14,11 +14,11 @@ The drone collects raw video data of photovoltaic (PV) panels during its inspect
 
 You can access and download the raw video data from the following Baidu Netdisk link:
 
-[Baidu Netdisk - Raw Video Data](https://pan.baidu.com/s/your_link_here)
+[Baidu Netdisk - Raw Video Data](https://pan.baidu.com/s/1yPEjzDxNqisjyBJwAx3cUw)
 
 ### How to Access:
 1. Click on the link above.
-2. Enter the provided access code if prompted.
+2. Enter the provided access code if prompted (4019).
 3. Download the video files for further use.
 
 ## Features
