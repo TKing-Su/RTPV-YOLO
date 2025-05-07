@@ -8,7 +8,6 @@ Here is a demo of the system detecting defects in real-time:
 
 ![Demo GIF](examples/hotspot-detect.gif)
 
-*Note: Replace `path_to_your_demo.gif` with the actual path to your demo file.*
 
 ## Raw Data Collection
 
