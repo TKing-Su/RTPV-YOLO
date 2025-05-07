@@ -8,7 +8,6 @@ Here is a demo of the system detecting defects in real-time:
 
 ![Demo GIF](examples/hotspot-detect.gif)
 
-
 ## Raw Data Collection
 
 The drone collects raw video data of photovoltaic (PV) panels during its inspection. These videos are crucial for training and evaluating detection models. The raw data includes both thermal and RGB footage captured at various altitudes.
@@ -27,14 +26,6 @@ You can access and download the raw video data from the following Baidu Netdisk 
 - **Real-Time Detection**: Built on the **YOLOv9** architecture, **RTPV-YOLO** enables efficient, real-time detection of PV defects using UAVs.
 - **Advanced Modules**: Utilizes the **Spatial to Depth Convolution (SPD-Conv)** and **Convolutional Block Attention Module (CBAM)** to enhance detection performance for small and irregularly shaped defects.
 - **Reparameterization Adaptive Kernel Convolution Module (RepAKCM)**: This innovative module reduces computational load while improving feature extraction and fusion, allowing for better performance on resource-constrained devices like UAVs.
-
-## Installation
-
-### Requirements:
-- Python 3.8+
-- OpenCV
-- TensorFlow / PyTorch (depending on your setup)
-- Other dependencies in `requirements.txt`
 
 ## Performance
 
