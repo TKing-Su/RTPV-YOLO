@@ -1,2 +1,2 @@
 # RTPV-YOLO
-![Image Alt Text](example/PV-data.gif)
+![Image Alt Text](example/hotspot.gif)
