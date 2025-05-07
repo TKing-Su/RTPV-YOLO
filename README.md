@@ -8,6 +8,24 @@ Here is a demo of the algorithm detecting defects in real-time:
 
 ![Demo GIF](examples/hotspot-detect.gif)
 
+## UAV Platform
+
+The **RTPV-YOLO** algorithm is designed to work with UAV platforms, which are equipped with thermal and RGB cameras for data collection during PV panel inspections. These UAVs are essential for capturing the necessary data to perform real-time defect detection.
+
+Here is an overview of the UAV platform used in this project:
+
+![UAV Platform](images/fig1.png)
+
+The UAV is equipped with high-resolution RGB and thermal cameras, allowing it to inspect large photovoltaic fields efficiently. With its real-time image processing capabilities, the UAV can detect defects on the PV panels, such as hot spots or obstructions, during its flight.
+
+## Visual Demonstration of the Platform
+
+Below are images showing the UAV platform in action, along with the typical data it captures during inspections.
+
+![UAV in Action](images/fig2.png)
+
+These images demonstrate how the UAV captures crucial data from both RGB and thermal perspectives, which are then processed by the **RTPV-YOLO** algorithm for defect detection.
+
 ## Raw Data Collection
 
 The drone collects raw video data of photovoltaic (PV) panels during its inspection. These videos are crucial for training and evaluating detection models. The raw data includes both thermal and RGB footage captured at various altitudes.
