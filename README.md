@@ -18,7 +18,7 @@ You can access and download the raw video data from the following Baidu Netdisk 
 
 ### How to Access:
 1. Click on the link above.
-2. Enter the provided access code if prompted (4019).
+2. Enter the provided access code (4019).
 3. Download the video files for further use.
 
 ## Features
