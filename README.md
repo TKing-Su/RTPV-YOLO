@@ -4,7 +4,7 @@
 
 ## Demo
 
-Here is a demo of the algorithm detecting defects in real-time:
+Here is a demo of the algorithm detecting hotspot defects in real-time:
 
 ![Demo GIF](examples/hotspot-detect.gif)
 
