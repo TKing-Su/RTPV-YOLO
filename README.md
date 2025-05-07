@@ -4,9 +4,19 @@
 
 ## Demo
 
-Here is a demo of the algorithm detecting hotspot defects in real-time:
+Below are two demonstration videos showcasing the capabilities of **RTPV-YOLO** in different UAV inspection scenarios:
 
-![Demo GIF](examples/hotspot-detect.gif)
+### 🔥 Thermal Hotspot Detection during High-Altitude Patrol
+
+This demo shows the UAV flying at a high altitude over the photovoltaic field while using a thermal camera to detect subtle thermal anomalies (hot spots) on solar panels.
+
+![Thermal Demo](examples/hotspot-detect.gif)
+
+### 🌿 Foreign Object Detection via RGB Imaging at Low Altitude
+
+This demo illustrates the UAV performing a close-range inspection using an RGB camera to identify foreign objects such as bird droppings, leaves, or dust that may obstruct solar panels.
+
+![RGB Demo](examples/demo-rgb.gif)
 
 ## UAV Platform
 
