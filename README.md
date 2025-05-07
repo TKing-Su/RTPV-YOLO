@@ -1,10 +1,10 @@
 # RTPV-YOLO: Real-Time Photovoltaic Defect Detection with UAV-Based Thermal and RGB Imaging
 
-**RTPV-YOLO** is a cutting-edge system designed for real-time photovoltaic (PV) defect detection using Unmanned Aerial Vehicles (UAVs). The model overcomes traditional limitations in detecting small hot spots in thermal images and irregularly shaped obstructions (e.g., bird droppings or leaves) in RGB images. Built on the YOLOv9 architecture, **RTPV-YOLO** integrates several advanced modules for better accuracy and efficiency.
+**RTPV-YOLO** is a novel algorithm designed for real-time photovoltaic (PV) defect detection using Unmanned Aerial Vehicles (UAVs). The algorithm addresses traditional challenges in detecting small hot spots in thermal images and irregularly shaped obstructions (e.g., bird droppings or leaves) in RGB images. It integrates several advanced modules for enhanced accuracy and efficiency in detecting PV defects.
 
 ## Demo
 
-Here is a demo of the system detecting defects in real-time:
+Here is a demo of the algorithm detecting defects in real-time:
 
 ![Demo GIF](examples/hotspot-detect.gif)
 
@@ -23,13 +23,13 @@ You can access and download the raw video data from the following Baidu Netdisk 
 
 ## Features
 
-- **Real-Time Detection**: Built on the **YOLOv9** architecture, **RTPV-YOLO** enables efficient, real-time detection of PV defects using UAVs.
-- **Advanced Modules**: Utilizes the **Spatial to Depth Convolution (SPD-Conv)** and **Convolutional Block Attention Module (CBAM)** to enhance detection performance for small and irregularly shaped defects.
+- **Real-Time Detection**: The algorithm enables efficient, real-time detection of PV defects using UAVs.
+- **Advanced Modules**: Utilizes **Spatial to Depth Convolution (SPD-Conv)** and **Convolutional Block Attention Module (CBAM)** to enhance detection performance for small and irregularly shaped defects.
 - **Reparameterization Adaptive Kernel Convolution Module (RepAKCM)**: This innovative module reduces computational load while improving feature extraction and fusion, allowing for better performance on resource-constrained devices like UAVs.
 
 ## Performance
 
-The **RTPV-YOLO** model has been evaluated on a custom-built PV defect dataset and achieved a **mean Average Precision (mAP)** of **91%**, outperforming comparable models in terms of both accuracy and computational efficiency.
+The **RTPV-YOLO** algorithm has been evaluated on a custom-built PV defect dataset and achieved a **mean Average Precision (mAP)** of **91%**, outperforming comparable models in terms of both accuracy and computational efficiency.
 
 ## License
 
