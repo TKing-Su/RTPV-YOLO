@@ -19,7 +19,7 @@ You can access and download the raw video data from the following Baidu Netdisk 
 
 Below is an example GIF from the dataset showing a snippet of the inspection footage:  
 
-![Dataset Sample GIF](examples/PV-data.gif)  
+![Dataset Sample GIF](../examples/PV-data.gif)  
 
 ---
 
