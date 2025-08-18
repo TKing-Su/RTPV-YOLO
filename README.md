@@ -1,5 +1,11 @@
 # RTPV-YOLO: Real-Time Photovoltaic Defect Detection with UAV-Based Thermal and RGB Imaging
 
+📄 **Paper Information**  
+- *Journal:* IEEE Transactions on Aerospace and Electronic Systems  
+- *Date:* January 2025  
+- *Pages:* PP(99):1-12  
+- *DOI:* [10.1109/TAES.2025.3580391](http://dx.doi.org/10.1109/TAES.2025.3580391)
+
 **RTPV-YOLO** is a novel algorithm designed for real-time photovoltaic (PV) defect detection using Unmanned Aerial Vehicles (UAVs). The algorithm addresses traditional challenges in detecting small hot spots in thermal images and irregularly shaped obstructions (e.g., bird droppings or leaves) in RGB images. It integrates several advanced modules for enhanced accuracy and efficiency in detecting PV defects.
 
 ## Demo
