@@ -56,7 +56,7 @@ class FilmicLightRenderer:
                     float raw_mask = texture(tex_mask, uv).r;
                     float effective_mask = mix(1.0, raw_mask, mask_factor);
 
-                    vc3 normal = normalize(norm_raw * 2.0 -1.0);
+                    vec3 normal = normalize(norm_raw * 2.0 -1.0);
 
                     vec3 light_dir = normalize(light_direction);
                     vec3 view_dir = normalize(vec3(uv, 0.0) - light_pos);
@@ -221,11 +221,6 @@ class FilmicLightRenderer:
              self.prog['tex_albedo'].value = 2
              self.prog['tex_normal'].value = 3  
 
-             self.prog[tex_input].value = 0
-             self.prog[tex_mask].value = 1
-             self.prog[tex_albedo].value = 2
-             self.prog[tex_normal].value = 3
-
              target_col = np.array(self.PALETTE[self.palette_idx])
              self.current_color = self.current_color * 0.92 + target_col * 0.08
              target_mask = 1.0 if self.mask_enabled else 0.0
@@ -251,7 +246,7 @@ class FilmicLightRenderer:
              self.save_framebuffer_as_image(output_file)
 
              os.makedirs(os.path.dirname(env_map_file), exist_ok=True)
-             self.save_framebuffer_as_image(env_map_file)
+             self.save_light_environment_map(env_map_file)
 
              return True
          except Exception as e:
@@ -290,14 +285,14 @@ class FilmicLightRenderer:
                 base_name = os.path.splitext(filename)[0]
                 ext = '.png'
 
-                output_filename = base_name.replace('_Source', '_Render') + ext
+                output_filename = base_name.replace('Source', 'Render') + ext
                 output_file = os.path.join(self.output_base_path, 'Render', output_filename)
-                env_map_filename = base_name.replace('_Source', '_HDRI') + ext
+                env_map_filename = base_name.replace('Source', 'HDRI') + ext
                 env_map_file = os.path.join(self.output_base_path, 'HDRI', env_map_filename)
 
-                mask_filename = filename.replace('_Source', '_Alpha') 
-                albedo_filename = filename.replace('_Source', '_Albedo') 
-                normal_filename = filename.replace('_Source', '_Normal')              
+                mask_filename = filename.replace('Source', 'Alpha') 
+                albedo_filename = filename.replace('Source', 'BaseColor') 
+                normal_filename = filename.replace('Source', 'Normal')              
                 mask_file = os.path.join(self.mask_path, mask_filename)
                 albedo_file = os.path.join(self.albedo_path, albedo_filename)
                 normal_file = os.path.join(self.normal_path, normal_filename) 
@@ -343,7 +338,7 @@ class FilmicLightRenderer:
                 angle_attenuation = np.exp(-angles*light_size*2.0)
 
                 base_intensity *= angle_attenuation
-            final_intensity = base_intensity + light_intensity
+            final_intensity = base_intensity * light_intensity
             env_colors = final_intensity[..., np.newaxis] * light_color
 
             env_img_array = np.clip(env_colors*255.0, 0, 255).astype(np.uint8)
@@ -363,7 +358,7 @@ def main():
     base_path = "path/to/dataset"
     input_path = os.path.join(base_path, "Source")
     mask_path = os.path.join(base_path, "Alpha")
-    albedo_path = os.path.join(base_path, "Albedo")
+    albedo_path = os.path.join(base_path, "BaseColor")
     normal_path = os.path.join(base_path, "Normal")
     output_base_path = os.path.join(base_path, "output")    
 
@@ -373,7 +368,7 @@ def main():
         albedo_path=albedo_path,
         normal_path=normal_path,
         output_base_path=output_base_path,
-        copy_source=True
+        copy_source=False
     )
 
     renderer.batch_process()    
